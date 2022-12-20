@@ -6,4 +6,14 @@ export declare class sdkdemoWeb extends WebPlugin implements sdkdemoPlugin {
     }): Promise<{
         value: string;
     }>;
+    joinChannel(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
+    leaveChannel(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
 }

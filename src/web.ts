@@ -7,7 +7,6 @@ export class sdkdemoWeb extends WebPlugin implements sdkdemoPlugin {
     console.log('ECHO', options);
     return options;
   }
-
   async joinChannel(options: { value: string }): Promise<{ value: string }> {
     console.log('ECHO', options)
     return options
@@ -16,5 +15,4 @@ export class sdkdemoWeb extends WebPlugin implements sdkdemoPlugin {
     console.log('ECHO', options)
     return options
   }
-
 }

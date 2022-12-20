@@ -4,4 +4,14 @@ export interface sdkdemoPlugin {
     }): Promise<{
         value: string;
     }>;
+    joinChannel(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
+    leaveChannel(options: {
+        value: string;
+    }): Promise<{
+        value: string;
+    }>;
 }
