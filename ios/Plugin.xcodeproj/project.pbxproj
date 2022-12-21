@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,18 @@
 		50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50ADFFA52020D75100D50D53 /* Capacitor.framework */; };
 		50ADFFA82020EE4F00D50D53 /* sdkdemoPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFFA72020EE4F00D50D53 /* sdkdemoPlugin.m */; };
 		50E1A94820377CB70090CE1A /* sdkdemoPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E1A94720377CB70090CE1A /* sdkdemoPlugin.swift */; };
+		88F361B62952C0D60018B30C /* AIAEC in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361B52952C0D60018B30C /* AIAEC */; };
+		88F361B82952C0D60018B30C /* AINS in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361B72952C0D60018B30C /* AINS */; };
+		88F361BA2952C0D60018B30C /* AudioBeauty in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361B92952C0D60018B30C /* AudioBeauty */; };
+		88F361BC2952C0D60018B30C /* ClearVision in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361BB2952C0D60018B30C /* ClearVision */; };
+		88F361BE2952C0D60018B30C /* ContentInspect in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361BD2952C0D60018B30C /* ContentInspect */; };
+		88F361C02952C0D60018B30C /* DRM in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361BF2952C0D60018B30C /* DRM */; };
+		88F361C22952C0D60018B30C /* ReplayKit in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361C12952C0D60018B30C /* ReplayKit */; };
+		88F361C42952C0D60018B30C /* RtcBasic in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361C32952C0D60018B30C /* RtcBasic */; };
+		88F361C62952C0D60018B30C /* SpatialAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361C52952C0D60018B30C /* SpatialAudio */; };
+		88F361C82952C0D60018B30C /* SuperResolution in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361C72952C0D60018B30C /* SuperResolution */; };
+		88F361CA2952C0D60018B30C /* VQA in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361C92952C0D60018B30C /* VQA */; };
+		88F361CC2952C0D60018B30C /* VirtualBackground in Frameworks */ = {isa = PBXBuildFile; productRef = 88F361CB2952C0D60018B30C /* VirtualBackground */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +64,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F361BC2952C0D60018B30C /* ClearVision in Frameworks */,
+				88F361B62952C0D60018B30C /* AIAEC in Frameworks */,
+				88F361BE2952C0D60018B30C /* ContentInspect in Frameworks */,
 				50ADFFA42020D75100D50D53 /* Capacitor.framework in Frameworks */,
 				03FC29A292ACC40490383A1F /* Pods_Plugin.framework in Frameworks */,
+				88F361BA2952C0D60018B30C /* AudioBeauty in Frameworks */,
+				88F361C82952C0D60018B30C /* SuperResolution in Frameworks */,
+				88F361CA2952C0D60018B30C /* VQA in Frameworks */,
+				88F361CC2952C0D60018B30C /* VirtualBackground in Frameworks */,
+				88F361C02952C0D60018B30C /* DRM in Frameworks */,
+				88F361B82952C0D60018B30C /* AINS in Frameworks */,
+				88F361C22952C0D60018B30C /* ReplayKit in Frameworks */,
+				88F361C42952C0D60018B30C /* RtcBasic in Frameworks */,
+				88F361C62952C0D60018B30C /* SpatialAudio in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +184,20 @@
 			dependencies = (
 			);
 			name = Plugin;
+			packageProductDependencies = (
+				88F361B52952C0D60018B30C /* AIAEC */,
+				88F361B72952C0D60018B30C /* AINS */,
+				88F361B92952C0D60018B30C /* AudioBeauty */,
+				88F361BB2952C0D60018B30C /* ClearVision */,
+				88F361BD2952C0D60018B30C /* ContentInspect */,
+				88F361BF2952C0D60018B30C /* DRM */,
+				88F361C12952C0D60018B30C /* ReplayKit */,
+				88F361C32952C0D60018B30C /* RtcBasic */,
+				88F361C52952C0D60018B30C /* SpatialAudio */,
+				88F361C72952C0D60018B30C /* SuperResolution */,
+				88F361C92952C0D60018B30C /* VQA */,
+				88F361CB2952C0D60018B30C /* VirtualBackground */,
+			);
 			productName = Plugin;
 			productReference = 50ADFF88201F53D600D50D53 /* Plugin.framework */;
 			productType = "com.apple.product-type.framework";
@@ -215,6 +253,9 @@
 				Base,
 			);
 			mainGroup = 50ADFF7E201F53D600D50D53;
+			packageReferences = (
+				88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+			);
 			productRefGroup = 50ADFF89201F53D600D50D53 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,43 +311,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-PluginTests/Pods-PluginTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Capacitor/Capacitor.framework",
 				"${BUILT_PRODUCTS_DIR}/CapacitorCordova/Cordova.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AINS/AgoraAiNoiseSuppressionExtension.framework/AgoraAiNoiseSuppressionExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/AudioBeauty/AgoraAudioBeautyExtension.framework/AgoraAudioBeautyExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ClearVision/AgoraClearVisionExtension.framework/AgoraClearVisionExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ContentInspect/AgoraContentInspectExtension.framework/AgoraContentInspectExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/ReplayKit/AgoraReplayKitExtension.framework/AgoraReplayKitExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraAiEchoCancellationExtension.framework/AgoraAiEchoCancellationExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraDav1d.framework/AgoraDav1d",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraDrmLoaderExtension.framework/AgoraDrmLoaderExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraRtcKit.framework/AgoraRtcKit",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraSoundTouch.framework/AgoraSoundTouch",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/AgoraVideoQualityAnalyzerExtension.framework/AgoraVideoQualityAnalyzerExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/Agorafdkaac.framework/Agorafdkaac",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/RtcBasic/Agoraffmpeg.framework/Agoraffmpeg",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SpatialAudio/AgoraSpatialAudioExtension.framework/AgoraSpatialAudioExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/SuperResolution/AgoraSuperResolutionExtension.framework/AgoraSuperResolutionExtension",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AgoraRtcEngine_iOS/VirtualBackground/AgoraVideoSegmentationExtension.framework/AgoraVideoSegmentationExtension",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Capacitor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cordova.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAiNoiseSuppressionExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAudioBeautyExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraClearVisionExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraContentInspectExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraReplayKitExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraAiEchoCancellationExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraDav1d.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraDrmLoaderExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraRtcKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSoundTouch.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraVideoQualityAnalyzerExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agorafdkaac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Agoraffmpeg.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSpatialAudioExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraSuperResolutionExtension.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AgoraVideoSegmentationExtension.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -481,7 +490,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -502,7 +512,12 @@
 				INFOPLIST_FILE = Plugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)\n$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.getcapacitor.Plugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -528,7 +543,12 @@
 				INFOPLIST_FILE = Plugin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(FRAMEWORK_SEARCH_PATHS)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(FRAMEWORK_SEARCH_PATHS)",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.getcapacitor.Plugin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -545,7 +565,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PluginTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.getcapacitor.PluginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -559,7 +583,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PluginTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.getcapacitor.PluginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -598,6 +626,80 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		88F361B52952C0D60018B30C /* AIAEC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AIAEC;
+		};
+		88F361B72952C0D60018B30C /* AINS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AINS;
+		};
+		88F361B92952C0D60018B30C /* AudioBeauty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = AudioBeauty;
+		};
+		88F361BB2952C0D60018B30C /* ClearVision */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ClearVision;
+		};
+		88F361BD2952C0D60018B30C /* ContentInspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ContentInspect;
+		};
+		88F361BF2952C0D60018B30C /* DRM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = DRM;
+		};
+		88F361C12952C0D60018B30C /* ReplayKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = ReplayKit;
+		};
+		88F361C32952C0D60018B30C /* RtcBasic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = RtcBasic;
+		};
+		88F361C52952C0D60018B30C /* SpatialAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = SpatialAudio;
+		};
+		88F361C72952C0D60018B30C /* SuperResolution */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = SuperResolution;
+		};
+		88F361C92952C0D60018B30C /* VQA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VQA;
+		};
+		88F361CB2952C0D60018B30C /* VirtualBackground */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88F361B42952C0D60018B30C /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */;
+			productName = VirtualBackground;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 50ADFF7F201F53D600D50D53 /* Project object */;
 }

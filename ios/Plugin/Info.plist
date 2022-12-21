@@ -23,7 +23,5 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Access the camera.
 </string>
-	<key>NSPrincipalClass</key>
-	<string></string>
 </dict>
 </plist>

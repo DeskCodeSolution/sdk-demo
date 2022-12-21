@@ -22,10 +22,10 @@ public class sdkdemoPlugin: CAPPlugin {
     let appID = "6efdd253f1c74743bd343fc97c136d6c"
     
     // Update with the temporary token generated in Agora Console.
-    var token = "007eJxTYBCZYrE4e+KurrWvknadk6j81W4SuNx1Sc3jd+ZMynt/B3xTYDBLTUtJMTI1TjNMNjcxNzFOSjE2MU5LtjRPNjQ2SzFLbv45O7khkJEhbU0xMyMDBIL4vAwlqcUl8ckZiXl5qTmGDAwAI1AlLA=="
+    var token = "007eJxTYNgq7/aDqUGS+6/juqOs958XfIvfViEzy+qr8PZz92o69+UpMJilpqWkGJkapxkmm5uYmxgnpRibGKclW5onGxqbpZglB9QvSm4IZGRQPvGEgREKQXwuhrLMlNT85MScHCMGBgB1tCMn"
     
     // Update with the channel name you used to generate the token in Agora Console.
-    var channelName = "RemoteDesk"
+    var channelName = "videocall2"
     
     // The video feed for the local user is displayed here
     var localView: UIView!
@@ -59,8 +59,8 @@ public class sdkdemoPlugin: CAPPlugin {
     
     //MARK: Sub Functions
     func initViews() {
-        remoteView.frame = UIScreen.main.bounds
-        localView.frame = UIScreen.main.bounds
+        remoteView.frame = CGRect(x: 20, y: 50, width: 350, height: 330)
+        localView.frame = CGRect(x: 20, y: 400, width: 350, height: 330)
     }
     
     func checkForPermissions() -> Bool {
